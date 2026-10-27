@@ -56,7 +56,7 @@ export default function Awards() {
 
   return (
     <section className="relative">
-      <div className="pt-30 w-full max-tablet:pt-20 max-md:pt-18 max-mobile:pt-16" />
+      {/* <div className="pt-0 w-full max-tablet:pt-20 max-md:pt- max-mobile:pt-16" /> */}
 
       <div className="block mx-auto px-6 max-w-7xl w-full before:content-['_'] before:[grid-area:1_/_1_/_2_/_2] before:table after:clear-both after:content-['_'] after:[grid-area:1_/_1_/_2_/_2] after:table max-tablet:px-[1.2rem] max-md:px-[1.0499rem] max-mobile:px-[0.899rem]">
         <div className="inner-wrappar">

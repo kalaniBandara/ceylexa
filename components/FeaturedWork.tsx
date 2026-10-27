@@ -123,7 +123,7 @@ export default function FeaturedWork() {
                           </div>
                         </div>
                         <div className="flex gap-3 flex-col justify-center items-center max-tablet:gap-[0.6rem] max-md:gap-[0.5249rem] max-mobile:gap-[0.449rem]">
-                          <div className="font-sans text-white text-[3.25rem] leading-[1.2em] font-semibold text-shadow-[0_1px_12px_rgb(0_0_0_/_35%)] max-tablet:text-[3rem] max-md:text-[2.5rem]">
+                          <div className="hidden lg:inline-block font-sans text-white text-[3.25rem] leading-[1.2em] font-semibold text-shadow-[0_1px_12px_rgb(0_0_0_/_35%)] max-tablet:text-[3rem] max-md:text-[2.5rem]">
                             {project.title}
                           </div>
                           <div className="mb-0 font-sans text-[rgb(255_255_255_/_78%)] text-[1rem] leading-[1.45em] font-normal">

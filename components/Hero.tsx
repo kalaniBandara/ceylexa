@@ -251,7 +251,7 @@ export default function Hero() {
     <section className="relative w-full max-md:pt-0 ">
       <div className="pt-17 max-tablet:pt-[3.4rem] max-md:pt-[2.97rem] max-mobile:pt-[2.55rem]" />
       <div className=" block mx-auto px-6 max-w-[120rem] w-full before:content-['_'] before:[grid-area:1_/_1_/_2_/_2] before:table after:clear-both after:content-['_'] after:[grid-area:1_/_1_/_2_/_2] after:table max-tablet:px-[1.2rem] max-md:px-[1.0499rem] max-mobile:px-[0.899rem]">
-        <div className="overflow-hidden py-20 w-full max-tablet:py-[5rem] max-md:py-[4.3745rem] max-mobile:py-[3.749rem]">
+        <div className="overflow-hidden py-20 w-full max-tablet:py-[5rem] max-md:py-[4.3745rem] max-mobile:py-[2.749rem]">
           <h1
             className="mx-auto text-[6.5rem] leading-[1.05em] font-semibold tracking-tight text-center max-tablet:text-[4.75rem] max-md:text-[3.5rem] max-mobile:text-[2.5rem]"
             ref={headingRef}

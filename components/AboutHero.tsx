@@ -110,7 +110,7 @@ export default function AboutHero() {
             <div className="flex justify-start items-start max-mobile:gap-[0.449rem] max-mobile:items-center max-mobile:flex-col">
               <SparkleIcon />
               <div className="max-w-64 max-mobile:max-w-none">
-                <p className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal max-mobile:text-center">
+                <p className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal max-mobile:text-center">
                   A forward-thinking digital marketing company built on creativity, technology,
                   strategy, and measurable results.
                 </p>
@@ -120,8 +120,8 @@ export default function AboutHero() {
             <div className="flex gap-2 justify-center items-center max-tablet:gap-[0.4rem] max-md:gap-[0.35rem] max-mobile:gap-3 max-mobile:flex-col">
               <Link href="/project" className="flex relative overflow-hidden gap-2 justify-center items-center py-3 px-6 max-w-full text-white bg-[#d7ba5e] rounded-[6.25rem] max-tablet:gap-[0.4rem] max-tablet:py-[0.8rem] max-tablet:px-[1.2rem] max-md:gap-[0.35rem] max-md:py-[0.7875rem] max-md:px-[1.0499rem] max-mobile:gap-[0.3rem] max-mobile:py-[0.825rem] max-mobile:px-[0.899rem]">
                 <div className="overflow-hidden h-6">
-                  <div className="relative z-2 leading-[1.5em] font-semibold">Explore All Work</div>
-                  <div className="relative z-2 leading-[1.5em] font-semibold">Explore All Work</div>
+                  <div className="relative z-2 leading-[1.45em] font-semibold">Explore All Work</div>
+                  <div className="relative z-2 leading-[1.45em] font-semibold">Explore All Work</div>
                 </div>
                 <div className="flex overflow-hidden justify-start items-center max-w-[1.2rem]">
                   <ArrowIcon />
@@ -132,8 +132,8 @@ export default function AboutHero() {
 
               <Link href="/contact" className="flex relative overflow-hidden gap-2 justify-center items-center py-3 px-6 max-w-full text-black bg-alabaster rounded-[6.25rem] max-tablet:gap-[0.4rem] max-tablet:py-[0.8rem] max-tablet:px-[1.2rem] max-md:gap-[0.35rem] max-md:py-[0.7875rem] max-md:px-[1.0499rem] max-mobile:gap-[0.3rem] max-mobile:py-[0.825rem] max-mobile:px-[0.899rem]">
                 <div className="overflow-hidden h-6 bg-normal-white-2">
-                  <div className="relative z-2 leading-[1.5em] font-semibold">Get in Touch</div>
-                  <div className="relative z-2 leading-[1.5em] font-semibold bg-normal-white-4">Get in Touch</div>
+                  <div className="relative z-2 leading-[1.45em] font-semibold">Get in Touch</div>
+                  <div className="relative z-2 leading-[1.45em] font-semibold bg-normal-white-4">Get in Touch</div>
                 </div>
                 <div className="flex overflow-hidden justify-start items-center max-w-[1.2rem] bg-normal-white-5">
                   <ArrowIcon className="relative z-2 flex-none w-5 text-black" />
@@ -149,7 +149,7 @@ export default function AboutHero() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block py-1.5 px-4 max-w-full text-dim-gray leading-[1.5em] border border-light-transparent-black rounded-full [transition:all_0.3s] hover:text-[#d7ba5e] hover:border-[#d7ba5e] max-tablet:py-[0.3rem] max-tablet:px-[0.8rem] max-md:py-[0.26rem] max-md:px-[0.7rem] max-mobile:py-[0.224rem] max-mobile:px-[0.6rem]"
+                  className="inline-block py-1.5 px-4 max-w-full text-dim-gray leading-[1.45em] border border-light-transparent-black rounded-full [transition:all_0.3s] hover:text-[#d7ba5e] hover:border-[#d7ba5e] max-tablet:py-[0.3rem] max-tablet:px-[0.8rem] max-md:py-[0.26rem] max-md:px-[0.7rem] max-mobile:py-[0.224rem] max-mobile:px-[0.6rem]"
                 >
                   <div className="text-[0.75rem] max-mobile:text-[0.9rem]">{social.label}</div>
                 </a>

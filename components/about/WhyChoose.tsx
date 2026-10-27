@@ -86,13 +86,13 @@ export default function WhyChoose() {
               <div className="h-6 w-full" />
 
               <div ref={contentRef} className="flex flex-col gap-5">
-                <p className="mb-0 font-sans text-base font-normal leading-[1.5em] text-black">
+                <p className="mb-0 font-sans text-base font-normal leading-[1.45em] text-black">
                   We help brands, startups, and growing businesses make smarter
                   marketing decisions through research, strategy, and execution
                   that actually align with business goals.
                 </p>
 
-                <p className="mb-0 font-sans text-base font-normal leading-[1.5em] text-black">
+                <p className="mb-0 font-sans text-base font-normal leading-[1.45em] text-black">
                   At Ceylexa Digital, we bring together creative thinking,
                   industry knowledge, and practical experience to develop
                   solutions that fit where your business is today and where you
@@ -122,7 +122,7 @@ export default function WhyChoose() {
               <div className="h-6 w-full" />
 
               <div className="flex flex-col gap-5">
-                <p className="mb-0 font-sans text-base font-normal leading-[1.5em] text-black">
+                <p className="mb-0 font-sans text-base font-normal leading-[1.45em] text-black">
                   Whether you have a new idea, a growing business, or a brand
                   ready for its next chapter, we're here to listen, collaborate,
                   and help bring it to life. At Ceylexa Digital, we work closely
@@ -132,7 +132,7 @@ export default function WhyChoose() {
                   make the process clear, creative, and collaborative.
                 </p>
 
-                <p className="mb-0 font-sans text-base font-normal leading-[1.5em] text-black">
+                <p className="mb-0 font-sans text-base font-normal leading-[1.45em] text-black">
                   Partner with Ceylexa Digital and let's turn your ideas into
                   digital experiences that create impact, build connections, and
                   drive growth.
@@ -145,7 +145,7 @@ export default function WhyChoose() {
           <div className="h-15 w-full max-tablet:h-12 max-md:h-10 max-mobile:h-9" />
 
           <div className="flex items-center justify-start gap-0.5">
-            <div className="font-sans text-[0.875rem] leading-[1.5em] text-dim-gray">
+            <div className="font-sans text-[0.875rem] leading-[1.45em] text-dim-gray">
               Benefits of working with Ceylexa
             </div>
           </div>
@@ -156,11 +156,15 @@ export default function WhyChoose() {
             {BENEFITS.map((benefit) => (
               <div
                 key={benefit.title}
-                className="bento-card relative overflow-hidden rounded-2xl border border-border bg-[linear-gradient(180deg,rgba(255,255,255,0.8),rgba(255,255,255,0.6))] p-7 backdrop-blur-[6px] [--mx:50%] [--my:50%] [&>*]:relative [&>*]:z-[1] after:pointer-events-none after:absolute after:-inset-0.25 after:z-0 after:rounded-[inherit] after:bg-[radial-gradient(480px_circle_at_var(--mx)_var(--my),rgba(215,186,94,0.14),transparent_45%)] after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100"
+                className="group relative cursor-pointer overflow-hidden rounded-2xl border border-[#dadce0] bg-white p-7 transition-all duration-200 hover:border-[#bdc1c6] hover:shadow-[0_1px_3px_rgba(60,64,67,0.12),0_4px_8px_rgba(60,64,67,0.08)]"
               >
-                <h3 className="text-foreground">{benefit.title}</h3>
+                <h3 className="mb-3 text-xl font-medium tracking-[-0.01em] text-[#202124]">
+                  {benefit.title}
+                </h3>
 
-                <p className="text-[0.875rem]">{benefit.description}</p>
+                <p className="text-sm leading-6 text-[#5f6368]">
+                  {benefit.description}
+                </p>
               </div>
             ))}
           </div>

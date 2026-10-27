@@ -55,7 +55,7 @@ export default function Contact() {
           {/* Left: intro + offices */}
           <div className="flex flex-col gap-10 lg:col-span-7">
             <div className="flex flex-col items-start gap-4">
-              {/* <div className="flex items-center gap-0.5 text-[0.875rem] leading-[1.5em]">
+              {/* <div className="flex items-center gap-0.5 text-[0.875rem] leading-[1.45em]">
                 <span className="text-[#d7ba5e]">{"//"}</span>
                 <span className="text-dim-gray">
                   Let&rsquo;s Start a Conversation
@@ -69,14 +69,14 @@ export default function Contact() {
                   Hear From You
                 </h3>
                 <div className="w-full h-16 max-md:h-10" />
-                <p className="mb-0 font-sans text-[1rem] leading-[1.5em] text-black">
+                <p className="mb-0 font-sans text-[1rem] leading-[1.45em] text-black">
                   Have a project in mind, a new idea, or simply looking for the
                   right digital partner? We&rsquo;d love to hear from you. Tell
                   us a little about your business, your goals, and what
                   you&rsquo;re looking to achieve, and our team will be happy to
                   explore how we can help.
                 </p>
-                <p className="mb-0 font-sans text-[1rem] leading-[1.5em] text-black mt-6">
+                <p className="mb-0 font-sans text-[1rem] leading-[1.45em] text-black mt-6">
                   Whether you need support with digital marketing, branding,
                   social media, content creation, web development, paid
                   advertising, or a complete digital strategy, let&rsquo;s start
@@ -204,10 +204,10 @@ export default function Contact() {
                 className="relative mt-2 inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-[6.25rem] bg-[#d7ba5e] px-6 py-3 font-semibold text-white"
               >
                 <span className="overflow-hidden h-6">
-                  <span className="relative z-2 block leading-[1.5em]">
+                  <span className="relative z-2 block leading-[1.45em]">
                     Send Message
                   </span>
-                  <span className="relative z-2 block leading-[1.5em]">
+                  <span className="relative z-2 block leading-[1.45em]">
                     Send Message
                   </span>
                 </span>

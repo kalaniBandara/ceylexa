@@ -100,11 +100,11 @@ export default function NewsEvents() {
             ref={descriptionRef}
             className="w-full max-w-7xl flex flex-col gap-5"
           >
-            <p className="mb-0 font-sans text-[1rem] font-normal leading-[1.5em] text-black">
+            <p className="mb-0 font-sans text-[1rem] font-normal leading-[1.45em] text-black">
               <strong>Stay connected with Ceylexa journey.</strong>
             </p>
 
-            <p className="mb-0 font-sans text-[1rem] font-normal leading-[1.5em] text-black">
+            <p className="mb-0 font-sans text-[1rem] font-normal leading-[1.45em] text-black">
               At Ceylexa, we take pride in our journey of excellence, having
               participated in and won multiple industry awards while
               representing Sri Lanka on prestigious international stages. Our
@@ -113,7 +113,7 @@ export default function NewsEvents() {
               Web Design and Technology Innovation.
             </p>
 
-            <p className="mb-0 font-sans text-[1rem] font-normal leading-[1.5em] text-black">
+            <p className="mb-0 font-sans text-[1rem] font-normal leading-[1.45em] text-black">
               Beyond awards, our projects have been showcased in global forums,
               positioning Ceylexa as a trusted name in delivering world-class
               digital solutions. These achievements reflect our commitment to
@@ -139,10 +139,10 @@ export default function NewsEvents() {
               className="inline-flex relative overflow-hidden gap-2 justify-center items-center rounded-[6.25rem] bg-[#d7ba5e] px-6 py-3 text-white max-w-full max-tablet:gap-[0.4rem] max-tablet:py-[0.8rem] max-tablet:px-[1.2rem] max-md:gap-[0.35rem] max-md:py-[0.7875rem] max-md:px-[1.0499rem] max-mobile:gap-[0.3rem] max-mobile:py-[0.825rem] max-mobile:px-[0.899rem]"
             >
               <div className="h-6 overflow-hidden">
-                <div className="relative z-[2] font-semibold leading-[1.5em]">
+                <div className="relative z-[2] font-semibold leading-[1.45em]">
                   View all news
                 </div>
-                <div className="relative z-[2] font-semibold leading-[1.5em]">
+                <div className="relative z-[2] font-semibold leading-[1.45em]">
                   View all news
                 </div>
               </div>

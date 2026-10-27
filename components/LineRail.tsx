@@ -7,7 +7,7 @@ export default function LineRail() {
             <div className="h-full w-0.25 bg-black opacity-10" />
             <div className="w-[0.59913rem] h-[0.59913rem] bg-[#d7ba5e] rounded-full" />
           </div>
-          <div className="font-sans text-black text-[0.875rem] leading-[1.5em]">[ Grow Fast ]</div>
+          <div className="font-sans text-black text-[0.875rem] leading-[1.45em]">[ Grow Fast ]</div>
         </div>
       ))}
     </div>

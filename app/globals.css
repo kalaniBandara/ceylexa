@@ -12,8 +12,8 @@
   --accent-3: #b8993f;
   --font-display: -apple-system, "Segoe UI", "SF Pro Display", "Helvetica Neue",
     Arial, sans-serif;
-  --font-sans: -apple-system, "Segoe UI", "SF Pro Text", "Helvetica Neue",
-    Arial, sans-serif;
+  --font-sans: var(--font-google-sans-flex), -apple-system, "Segoe UI", "SF Pro Text",
+    "Helvetica Neue", Arial, sans-serif;
 }
 
 @theme inline {
@@ -121,14 +121,17 @@
    Everything else is expressed as Tailwind utilities in the components. */
 @layer base {
   h1 {
+    letter-spacing: normal;
     @apply m-0 font-display text-[4rem] font-medium leading-[1.2em] max-tablet:text-[3.5rem] max-md:text-[3rem] max-mobile:text-[2.5rem];
   }
 
   h2 {
+    letter-spacing: normal;
     @apply my-0 font-display font-medium text-[3.25rem] leading-[1.2em] max-tablet:text-[2.9rem] max-md:text-[2.75rem] max-mobile:text-[2.25rem];
   }
 
   h3 {
+    letter-spacing: normal;
     @apply my-0 font-display font-medium text-[1.5rem] leading-[1.2em] max-tablet:text-[1.4rem] max-md:text-[1.3rem];
   }
 
@@ -171,7 +174,7 @@
   }
 
   p {
-    @apply my-0 text-dim-gray leading-[1.5em];
+    @apply my-0 text-dim-gray leading-[1.45em] tracking-[0.18px];
   }
 
   blockquote {

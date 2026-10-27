@@ -124,7 +124,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </Link>
             </Reveal>
 
-            <div className="mt-8 grid items-end gap-10 lg:grid-cols-2">
+            <div className="mt-8 grid items-end gap-10 lg:grid-cols-1">
               <Reveal delay={60}>
                 <div className="flex flex-wrap items-center gap-3 text-sm">
                   <span className="rounded-full border border-border bg-white/70 px-3 py-1 text-xs font-medium text-foreground">
@@ -133,12 +133,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   <span className="text-muted">{post.readingTime}</span>
                 </div>
                 <h1 className="tracking-tight text-foreground">{post.title}</h1>
-                <p className="max-w-xl text-[1rem] sm:text-[1.125rem]">
+                <p className="max-w-xl text-[1rem] sm:text-[1.125rem] mt-5">
                   {post.excerpt}
                 </p>
               </Reveal>
 
-              <Reveal delay={140}>
+              {/* <Reveal delay={140}>
                 <div className="relative aspect-[16/10] w-full overflow-hidden rounded-3xl border border-border shadow-[0_30px_80px_-40px_rgba(36,26,12,0.4)]">
                   <Image
                     src={post.image}
@@ -149,7 +149,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     className="object-cover"
                   />
                 </div>
-              </Reveal>
+              </Reveal> */}
             </div>
           </div>
         </section>
@@ -163,7 +163,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </div>
             </aside>
 
-            <article className="mx-auto w-full max-w-3xl">
+            <article className="mx-auto w-full">
               {post.blocks.map(renderBlock)}
 
               {/* Author box */}

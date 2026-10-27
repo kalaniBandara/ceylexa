@@ -48,10 +48,23 @@ export const SERVICES_INTRO = {
 export const PLATFORM_PARTNERS = {
   heading: "Powered by Leading Digital Marketing Platforms",
   body: "At Ceylexa Digital, we work with leading digital marketing platforms and technology partners around the world to bring our clients access to powerful tools, advanced advertising solutions, and the latest digital marketing capabilities. Our partnerships and platform expertise allow us to create smarter strategies, deliver targeted campaigns, track meaningful results, and help businesses grow in an ever-evolving digital landscape.",
-  // The source document only has text placeholders for these logos
-  // ("Facebook Partner Logo", "Google Partner Logo", "TikTok Partner").
-  // Swap for real logo images once they're supplied.
-  partners: ["Facebook Partner", "Google Partner", "TikTok Partner"],
+  partners: [
+    {
+      name: "Google Partner",
+      image: "/images/Partner%20Images/Google%20Partner.webp",
+      alt: "Google Partner",
+    },
+    {
+      name: "Meta Partner",
+      image: "/images/Partner%20Images/Meta%20Partner.webp",
+      alt: "Meta Partner",
+    },
+    {
+      name: "TikTok Partner",
+      image: "/images/Partner%20Images/Tiktok%20Partner.webp",
+      alt: "TikTok Partner",
+    },
+  ],
 };
 
 export const SERVICES: ServiceItem[] = [

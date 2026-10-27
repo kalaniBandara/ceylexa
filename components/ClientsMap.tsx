@@ -278,11 +278,11 @@ export default function ClientsMap() {
         <div className="inner-wrappar">
           <div className="flex flex-col items-start justify-start gap-4 max-tablet:gap-[0.8rem] max-md:gap-[0.7rem] max-mobile:gap-[0.6rem]">
             <div className="flex items-center justify-start gap-0.5">
-              <div className="z-999 font-sans text-[0.875rem] leading-[1.5em] text-[#d7ba5e]">
+              <div className="z-999 font-sans text-[0.875rem] leading-[1.45em] text-[#d7ba5e]">
                 {"//"}
               </div>
 
-              <div className="font-sans text-[0.875rem] leading-[1.5em] text-dim-gray">
+              <div className="font-sans text-[0.875rem] leading-[1.45em] text-dim-gray">
                 Global Reach
               </div>
             </div>
@@ -294,7 +294,7 @@ export default function ClientsMap() {
             <div className="w-full pt-6 max-tablet:pt-[1.2rem] max-md:pt-[1.0499rem] max-mobile:pt-[0.899rem]" />
 
             <div>
-              <p className="mb-0 font-sans text-[1rem] font-normal leading-[1.5em] text-black">
+              <p className="mb-0 font-sans text-[1rem] font-normal leading-[1.45em] text-black">
                 Our clients and projects extend across Sri Lanka and 11+
                 international markets, including Sri Lanka, Australia, New
                 Zealand, Singapore, Malaysia, United States of America, Japan,
@@ -303,7 +303,7 @@ export default function ClientsMap() {
 
               <div className="w-full pt-4 max-tablet:pt-[0.8rem] max-md:pt-[0.7rem] max-mobile:pt-[0.6rem]" />
 
-              <p className="mb-0 font-sans text-[1rem] font-normal leading-[1.5em] text-black">
+              <p className="mb-0 font-sans text-[1rem] font-normal leading-[1.45em] text-black">
                 Different industries. Different markets. One commitment to
                 helping brands grow.
               </p>

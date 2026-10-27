@@ -70,7 +70,7 @@ export default function FeaturedWork() {
         <div className="inner-wrappar">
           <div className="flex gap-6 flex-col justify-center items-center max-tablet:gap-[1.2rem] max-md:gap-[1.0499rem] max-mobile:gap-[0.899rem]">
             <div className="inline-flex gap-4 flex-col flex-1 justify-center items-center max-tablet:gap-[0.8rem] max-md:gap-[0.7rem] max-mobile:gap-[0.6rem] max-mobile:justify-start max-mobile:items-start">
-              <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.5em]">
+              <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.45em]">
                 <span className="text-[#d7ba5e] orrenge">{"// "}</span>Recent
                 Work
               </div>
@@ -115,10 +115,10 @@ export default function FeaturedWork() {
                       </div>
                       <div className="flex gap-6 flex-col items-center p-10 text-center max-tablet:gap-[1.2rem] max-tablet:p-8 max-md:gap-[1.0499rem] max-md:p-7 max-mobile:gap-[0.899rem] max-mobile:p-6 absolute bottom-0 left-0 right-0 w-full">
                         <div className="flex gap-6 justify-center items-center w-full text-[rgb(255_255_255_/_78%)] max-tablet:gap-[1.2rem] max-md:gap-[1.0499rem] max-mobile:gap-[0.899rem]">
-                          <div className="mb-0 font-sans text-[rgb(255_255_255_/_78%)] text-[1rem] leading-[1.5em] font-normal">
+                          <div className="mb-0 font-sans text-[rgb(255_255_255_/_78%)] text-[1rem] leading-[1.45em] font-normal">
                             {project.date}
                           </div>
-                          <div className="mb-0 font-sans text-[rgb(255_255_255_/_78%)] text-[1rem] leading-[1.5em] font-normal">
+                          <div className="mb-0 font-sans text-[rgb(255_255_255_/_78%)] text-[1rem] leading-[1.45em] font-normal">
                             {project.category}
                           </div>
                         </div>
@@ -126,7 +126,7 @@ export default function FeaturedWork() {
                           <div className="font-sans text-white text-[3.25rem] leading-[1.2em] font-semibold text-shadow-[0_1px_12px_rgb(0_0_0_/_35%)] max-tablet:text-[3rem] max-md:text-[2.5rem]">
                             {project.title}
                           </div>
-                          <div className="mb-0 font-sans text-[rgb(255_255_255_/_78%)] text-[1rem] leading-[1.5em] font-normal">
+                          <div className="mb-0 font-sans text-[rgb(255_255_255_/_78%)] text-[1rem] leading-[1.45em] font-normal">
                             {project.tags}
                           </div>
                         </div>
@@ -141,7 +141,7 @@ export default function FeaturedWork() {
           <div className="flex justify-center">
             <Link
               href="/project"
-              className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal underline-offset-4"
+              className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal underline-offset-4"
             >
               View all projects
             </Link>

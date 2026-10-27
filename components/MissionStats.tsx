@@ -35,7 +35,7 @@ export default function MissionStats() {
         <div className="inner-wrappar">
           <div className="grid gap-4 grid-rows-[auto] grid-cols-[1fr_0.75fr] auto-cols-[1fr] justify-between items-start max-tablet:grid-cols-[1fr_0.5fr] max-md:gap-7 max-md:grid-cols-[repeat(1,1fr)] max-md:justify-end max-md:flex-col max-mobile:gap-6">
             <div className="gap-4 justify-start items-start max-tablet:gap-[0.8rem] max-md:gap-[0.7rem] max-mobile:flex max-mobile:gap-[0.224rem] max-mobile:flex-col">
-              <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.5em]">
+              <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.45em]">
                 <span className="text-[#d7ba5e] orrenge">{"// "}</span>Our
                 Results
               </div>
@@ -44,7 +44,7 @@ export default function MissionStats() {
               <div className="pt-6 w-full max-tablet:pt-[1.2rem] max-md:pt-[1.0499rem] max-mobile:pt-[0.899rem]" />
               <div className="max-w-[30rem] max-tablet:max-w-none">
                 <div className="pt-2 w-full max-tablet:hidden max-tablet:pt-[0.4rem] max-md:pt-[0.35rem] max-mobile:pt-[0.3rem]" />
-                <p className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
+                <p className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal">
                   Ceylexa is a dynamic
                   <span className="text-[#d7ba5e]">
                     {" "}
@@ -62,10 +62,10 @@ export default function MissionStats() {
                   className="flex relative overflow-hidden gap-2 justify-center items-center py-3 px-6 max-w-full text-white bg-[#d7ba5e] rounded-[6.25rem] max-tablet:gap-[0.4rem] max-tablet:py-[0.8rem] max-tablet:px-[1.2rem] max-md:gap-[0.35rem] max-md:py-[0.7875rem] max-md:px-[1.0499rem] max-mobile:gap-[0.3rem] max-mobile:py-[0.825rem] max-mobile:px-[0.899rem]"
                 >
                   <div className="overflow-hidden h-6">
-                    <div className="relative z-2 leading-[1.5em] font-semibold">
+                    <div className="relative z-2 leading-[1.45em] font-semibold">
                       + Become a Client
                     </div>
-                    <div className="relative z-2 leading-[1.5em] font-semibold">
+                    <div className="relative z-2 leading-[1.45em] font-semibold">
                       + Become a Client
                     </div>
                   </div>
@@ -95,7 +95,7 @@ export default function MissionStats() {
                     ))}
                   </div>
                   <div className="">
-                    <div className="font-sans text-black text-[0.875rem] leading-[1.5em]">
+                    <div className="font-sans text-black text-[0.875rem] leading-[1.45em]">
                       250+ Brands Worldwide
                     </div>
                   </div>
@@ -117,7 +117,7 @@ export default function MissionStats() {
                     />
                   </div>
                 </div>
-                <div className="mb-0 font-sans text-spanish-gray text-[1rem] leading-[1.5em] font-normal">
+                <div className="mb-0 font-sans text-spanish-gray text-[1rem] leading-[1.45em] font-normal">
                   Brands Served
                 </div>
               </div>
@@ -144,7 +144,7 @@ export default function MissionStats() {
                       />
                     </div>
                   </div>
-                  <div className="font-sans text-white text-[0.875rem] leading-[1.5em]">
+                  <div className="font-sans text-white text-[0.875rem] leading-[1.45em]">
                     International Markets
                   </div>
                 </div>
@@ -168,7 +168,7 @@ export default function MissionStats() {
                       />
                     </div>
                   </div>
-                  <div className="mb-0 font-sans text-spanish-gray text-[1rem] leading-[1.5em] font-normal">
+                  <div className="mb-0 font-sans text-spanish-gray text-[1rem] leading-[1.45em] font-normal">
                     Core Services
                   </div>
                 </div>
@@ -199,7 +199,7 @@ export default function MissionStats() {
                       fill="currentColor"
                     />
                   </svg>
-                  <div className="font-sans text-black text-[0.875rem] leading-[1.5em]">
+                  <div className="font-sans text-black text-[0.875rem] leading-[1.45em]">
                     Let&rsquo;s Work Together
                   </div>
                 </div>

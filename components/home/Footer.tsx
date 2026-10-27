@@ -58,7 +58,7 @@ function FooterContent() {
                 alt="Ceylexa"
                 width={2702}
                 height={856}
-                className="h-8 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
             <p className="mt-4 max-w-xs text-sm text-muted">
@@ -102,6 +102,13 @@ function FooterContent() {
               <a href={OFFICES[1].phoneHref} className={linkClass}>
                 {OFFICES[1].phone}
               </a>
+              <Image
+                src="/images/Awards/Ceylexa%20LetterHead.png"
+                alt="Ceylexa"
+                width={449}
+                height={157}
+                className="-ml-2 mt-3 h-auto w-full max-w-[180px]"
+              />
             </Column>
           </div>
         </div>

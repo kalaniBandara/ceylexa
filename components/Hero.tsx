@@ -11,8 +11,8 @@ const CARDS = [
       "object-cover w-full h-full rounded-[1.875rem] transform-3d transform-[rotateX(0)_rotateY(10deg)_rotateZ(0)]",
     transform:
       "translate3d(-72%, 0, -800px) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-    src: "/images/hero-1.webp",
-    alt: "Person wearing a futuristic white helmet with a pink visor and matching pink headphones, dressed in an orange jacket against a clear blue sky.",
+    src: "/images/AboutCArosel/1.jpg",
+    alt: "About us carousel image 1",
   },
   {
     id: "_2",
@@ -21,8 +21,8 @@ const CARDS = [
       "object-cover w-full h-full rounded-[1.875rem] transform-3d transform-[rotateX(0)_rotateY(10deg)_rotateZ(0)]",
     transform:
       "translate3d(-40%, 0, -550px) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-    src: "/images/hero-2.webp",
-    alt: "Hand holding a melting chocolate bar partially wrapped in orange packaging.",
+    src: "/images/AboutCArosel/2.jpg",
+    alt: "About us carousel image 2",
   },
   {
     id: "_3",
@@ -31,8 +31,8 @@ const CARDS = [
       "object-cover w-full h-full rounded-[1.875rem] transform-3d transform-[rotateX(0)_rotateY(10deg)_rotateZ(0)]",
     transform:
       "translate3d(0%, 0, 0px) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-    src: "/images/hero-3.webp",
-    alt: "Man with buzz cut and black round glasses wearing a white button-up shirt against a bright pink background.",
+    src: "/images/AboutCArosel/3.jpg",
+    alt: "About us carousel image 3",
   },
   {
     id: "_4",
@@ -41,8 +41,8 @@ const CARDS = [
       "object-cover w-full h-full rounded-[1.875rem] transform-3d transform-[rotateX(0)_rotateY(10deg)_rotateZ(0)]",
     transform:
       "translate3d(45%, 0, -550px) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-    src: "/images/hero-4.webp",
-    alt: "Young person wearing yellow sunglasses and a colorful patterned jacket against an orange background.",
+    src: "/images/AboutCArosel/4.jpg",
+    alt: "About us carousel image 4",
   },
   {
     id: "_5",
@@ -51,8 +51,8 @@ const CARDS = [
       "object-cover w-full h-full rounded-[1.875rem] transform-3d transform-[rotateX(0)_rotateY(10deg)_rotateZ(0)]",
     transform:
       "translate3d(72%, 0, -800px) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-    src: "/images/hero-5.webp",
-    alt: "Young woman with brown hair in a ponytail, wearing a dark hoodie and smiling gently against a plain gray background.",
+    src: "/images/AboutCArosel/5.jpg",
+    alt: "About us carousel image 5",
   },
   {
     id: "_6",
@@ -61,8 +61,8 @@ const CARDS = [
       "object-cover w-full h-full rounded-[1.875rem] transform-3d transform-[rotateX(0)_rotateY(10deg)_rotateZ(0)]",
     transform:
       "translate3d(100%, 0, -800px) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-    src: "/images/hero-6.webp",
-    alt: "Young woman with shoulder-length dark hair and hazel eyes wearing a red lace top with a satin bow tie collar.",
+    src: "/images/AboutCArosel/7.jpg",
+    alt: "About us carousel image 7",
     startOpacity: 0,
   },
 ];
@@ -251,12 +251,12 @@ export default function Hero() {
     <section className="relative w-full max-md:pt-0 ">
       <div className="pt-17 max-tablet:pt-[3.4rem] max-md:pt-[2.97rem] max-mobile:pt-[2.55rem]" />
       <div className=" block mx-auto px-6 max-w-[120rem] w-full before:content-['_'] before:[grid-area:1_/_1_/_2_/_2] before:table after:clear-both after:content-['_'] after:[grid-area:1_/_1_/_2_/_2] after:table max-tablet:px-[1.2rem] max-md:px-[1.0499rem] max-mobile:px-[0.899rem]">
-        <div className="overflow-hidden py-25 w-full max-tablet:py-[5rem] max-md:py-[4.3745rem] max-mobile:py-[3.749rem]">
+        <div className="overflow-hidden py-20 w-full max-tablet:py-[5rem] max-md:py-[4.3745rem] max-mobile:py-[3.749rem]">
           <h1
             className="mx-auto text-[6.5rem] leading-[1.05em] font-semibold tracking-tight text-center max-tablet:text-[4.75rem] max-md:text-[3.5rem] max-mobile:text-[2.5rem]"
             ref={headingRef}
           >
-            Your partner in <span className="text-[#B08D3C]">digital</span>
+            Your partner in <span className="text-[#B08D3C]">Digital.</span>
           </h1>
         </div>
         <div className="flex relative justify-center items-center pb-12 max-tablet:pb-[2.4rem] max-md:pb-[2.09rem] max-mobile:mt-[1.2rem] max-mobile:pb-[1.799rem]">
@@ -300,8 +300,7 @@ export default function Hero() {
         <div className="flex overflow-hidden flex-col justify-start items-center">
           <div ref={subtitleWrapRef} className="max-w-[35rem]">
             <div className="text-[1.75rem] leading-[1.2em] font-semibold text-center max-tablet:text-[1.5rem] max-md:text-[1.25rem] max-mobile:text-[1.125rem]">
-              A digital marketing agency helping brands build, connect, and grow
-              — from Sri Lanka and New Zealand
+              A digital marketing agency helping brands build, connect, and grow from Sri Lanka and New Zealand
             </div>
           </div>
           <div className="pt-6 w-full max-tablet:pt-[1.2rem] max-md:pt-[1.0499rem] max-mobile:pt-[0.899rem]" />
@@ -327,7 +326,7 @@ export default function Hero() {
                 ))}
               </div>
               <div className="max-w-28">
-                <div className="font-sans text-black text-[0.875rem] leading-[1.5em]">
+                <div className="font-sans text-black text-[0.875rem] leading-[1.45em]">
                   Trusted by 250+ Brands
                 </div>
               </div>
@@ -341,7 +340,7 @@ export default function Hero() {
                   className="w-6"
                 /> */}
               <div className="flex gap-0.5 flex-col max-tablet:gap-[0.1rem] max-md:gap-[0.0875rem] max-mobile:gap-[0.075rem]">
-                <div className="font-sans text-black text-[0.875rem] leading-[1.5em]">
+                <div className="font-sans text-black text-[0.875rem] leading-[1.45em]">
                   100+ Reviews
                 </div>
                 <div className="flex gap-0.5 justify-start items-center max-tablet:gap-[0.1rem] max-md:gap-[0.0875rem] max-mobile:gap-[0.075rem]">

@@ -6,21 +6,21 @@ export default function NewsCard({ item }: { item: NewsItem }) {
   return (
     <Link
       href={`/news/${item.slug}`}
-      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-[linear-gradient(180deg,rgba(255,255,255,0.8),rgba(255,255,255,0.6))] transition-transform duration-300 hover:-translate-y-1"
+      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#dadce0] bg-white transition-all duration-200 hover:border-[#bdc1c6] hover:shadow-[0_1px_3px_rgba(60,64,67,0.12),0_4px_8px_rgba(60,64,67,0.08)]"
     >
       {/* Featured image */}
-      <div className="relative aspect-[16/9] w-full overflow-hidden bg-black/5">
+      <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#f8f9fa]">
         {item.image ? (
           <Image
             src={item.image}
             alt={item.title}
             fill
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
           />
         ) : (
-          <div className="flex h-full w-full items-center justify-center bg-[#f3efe4]">
-            <span className="font-sans text-sm text-black/50">
+          <div className="flex h-full w-full items-center justify-center">
+            <span className="text-sm font-medium text-[#5f6368]">
               Ceylexa News &amp; Events
             </span>
           </div>
@@ -28,24 +28,24 @@ export default function NewsCard({ item }: { item: NewsItem }) {
       </div>
 
       {/* Card content */}
-      <div className="flex flex-1 flex-col p-6 md:p-8">
-        <span className="w-fit rounded-full border border-border bg-white/70 px-3 py-1 text-xs font-medium text-foreground">
+      <div className="flex flex-1 flex-col p-6">
+        <span className="text-xs font-medium uppercase tracking-[0.08em] text-[#5f6368]">
           {item.category}
         </span>
 
-        <h3 className="mt-5 text-foreground transition-colors duration-300 group-hover:text-[#b49a43]">
+        <h3 className="mt-3 text-lg font-medium leading-7 tracking-[-0.02em] text-[#202124] transition-colors duration-200 group-hover:text-[#1a73e8]">
           {item.title}
         </h3>
 
-        <p className="mt-3 line-clamp-3 text-[0.875rem]">
+        <p className="mt-3 line-clamp-3 text-sm leading-6 text-[#5f6368]">
           {item.paragraphs[0]}
         </p>
 
-        <span className="mt-auto flex items-center gap-2 pt-6 text-sm font-semibold text-[#d7ba5e] underline-offset-4 group-hover:underline">
+        <span className="mt-auto flex items-center gap-1.5 pt-6 text-sm font-medium text-">
           Read more
           <span
             aria-hidden="true"
-            className="inline-block transition-transform duration-300 group-hover:translate-x-1"
+            className="transition-transform duration-200 group-hover:translate-x-1"
           >
             →
           </span>

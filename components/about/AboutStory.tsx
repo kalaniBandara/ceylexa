@@ -10,7 +10,7 @@ export default function AboutStory() {
           <div className="pt-6 w-full max-tablet:pt-[1.2rem] max-md:pt-[1.0499rem] max-mobile:pt-[0.899rem]" />
 
           <div className="flex flex-col gap-5">
-            <p className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
+            <p className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal">
               Ceylexa Digital is a forward-thinking digital marketing company
               built on a foundation of creativity, technology, strategy, and
               measurable results. We believe digital marketing is more than
@@ -18,7 +18,7 @@ export default function AboutStory() {
               connections, building memorable brands, and turning digital
               opportunities into sustainable business growth.
             </p>
-            <p className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
+            <p className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal">
               We provide comprehensive digital solutions designed to help
               businesses establish, strengthen, and grow their presence in an
               increasingly competitive digital world. Our services include
@@ -30,7 +30,7 @@ export default function AboutStory() {
               audiences, and market opportunities, creating tailored strategies
               that deliver real value.
             </p>
-            <p className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
+            <p className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal">
               At Ceylexa Digital, we understand that no two brands are the same.
               That&rsquo;s why we take a personalised approach to every project,
               combining strategic thinking, creative ideas, technology, and
@@ -50,7 +50,7 @@ export default function AboutStory() {
           <h3 className="text-left">More Than a Digital Marketing Company</h3>
           <div className="pt-4 w-full max-tablet:pt-[0.8rem] max-md:pt-[0.7rem] max-mobile:pt-[0.6rem]" />
           <div className="flex flex-col gap-5">
-            <p className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
+            <p className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal">
               From building a powerful brand identity and creating engaging
               content to developing high-performing websites and running
               targeted digital campaigns, we bring different areas of digital
@@ -60,7 +60,7 @@ export default function AboutStory() {
               engage your audience, or increase conversions, our team works to
               create solutions that support your wider business objectives.
             </p>
-            <p className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
+            <p className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal">
               We take the time to understand your industry, audience,
               competitors, and market environment before developing a strategy.
               This allows us to create digital solutions that are not only

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CONTACT_EMAIL } from "@/lib/site";
+import Button from "@/components/ui/Button";
 import { Bookmark, X } from "lucide-react";
 
 const ROLES = [
@@ -82,7 +83,7 @@ export default function Careers() {
   };
 
   return (
-    <section id="careers" className="relative">
+    <section id="careers" className="relative mt-10">
       <div className="max-w-7xl mx-auto block w-full px-6 max-tablet:px-[1.2rem] max-md:px-[1.0499rem] max-mobile:px-[0.899rem]">
         <div className="inner-wrappar">
           <div className="pt-4 w-full max-tablet:pt-[0.8rem] max-md:pt-[0.7rem] max-mobile:pt-[0.6rem]" />
@@ -98,7 +99,7 @@ export default function Careers() {
           <div className="pt-6 w-full max-tablet:pt-[1.2rem] max-md:pt-[1.0499rem] max-mobile:pt-[0.899rem]" />
 
           <div className="flex w-full flex-col gap-5">
-            <p className="mb-0 font-sans text-base leading-[1.5em] font-normal text-black">
+            <p className="mb-0 font-sans text-base leading-[1.45em] font-normal text-black">
               We are a people-first company &amp; are committed to providing
               best-in-class learning and development. At Ceylexa, your career is
               more than just a job. It&apos;s a journey filled with learning,
@@ -108,7 +109,7 @@ export default function Careers() {
               are eager to make an impact in the ever-evolving digital world.
             </p>
 
-            <p className="mb-0 font-sans text-base leading-[1.5em] font-normal text-black">
+            <p className="mb-0 font-sans text-base leading-[1.45em] font-normal text-black">
               We believe in building a culture where your ideas matter, where
               diversity is celebrated, and where collaboration drives success.
               Whether you are just starting your professional career or looking
@@ -119,7 +120,7 @@ export default function Careers() {
               digital landscape.
             </p>
 
-            <p className="mb-0 font-sans text-base leading-[1.5em] font-normal text-black">
+            <p className="mb-0 font-sans text-base leading-[1.45em] font-normal text-black">
               Our career opportunities span across multiple areas, including
               digital marketing jobs in Sri Lanka, web developer vacancies, and
               web design positions. Each role is designed to challenge you,
@@ -129,7 +130,7 @@ export default function Careers() {
               of digital solutions.
             </p>
 
-            <p className="mb-0 font-sans text-base leading-[1.5em] font-normal text-black">
+            <p className="mb-0 font-sans text-base leading-[1.45em] font-normal text-black">
               If you are passionate about shaping the future of online marketing
               and want to work with one of the most recognized digital marketing
               companies in the region, Ceylexa is the place to begin or advance
@@ -146,7 +147,7 @@ export default function Careers() {
           <div className="pt-4 w-full max-tablet:pt-[0.8rem] max-md:pt-[0.7rem] max-mobile:pt-[0.6rem]" />
 
           <div className="flex w-full flex-col gap-5">
-            <p className="mb-0 font-sans text-base leading-[1.5em] font-normal text-black">
+            <p className="mb-0 font-sans text-base leading-[1.45em] font-normal text-black">
               Discover the latest career opportunities and professional roles
               available across digital marketing, creative, technology, and
               business. From digital marketing and web development to design,
@@ -155,7 +156,7 @@ export default function Careers() {
               your career.
             </p>
 
-            <p className="mb-0 font-sans text-base leading-[1.5em] font-normal text-black">
+            <p className="mb-0 font-sans text-base leading-[1.45em] font-normal text-black">
               Stay up to date with new roles and find an opportunity that
               matches your experience, talents, and career goals.
             </p>
@@ -172,7 +173,7 @@ export default function Careers() {
                 return (
                   <article
                     key={`${role.title}-${role.location}`}
-                    className="flex min-h-[310px] flex-col rounded-[22px] border-2 border-[#E7E9EF] bg-white px-7 py-5 transition-colors duration-200 hover:border-[#D8DCE5] max-sm:min-h-0 max-sm:px-5 max-sm:py-5"
+                    className="flex min-h-full flex-col rounded-[22px] border-2 border-[#E7E9EF] bg-white px-7 py-5 transition-colors duration-200 hover:border-[#D8DCE5] max-sm:min-h-0 max-sm:px-5 max-sm:py-5"
                   >
                     {/* Job title and location */}
                     <div>
@@ -181,17 +182,17 @@ export default function Careers() {
                       </h4>
 
                       <p className="mt-2 text-[17px] leading-snug text-[#697386]">
-                        {role.location}
+                        {role.location} | Full time
                       </p>
 
-                      <p className="mt-3 text-[16px] text-[#697386]">
+                      {/* <p className="mt-3 text-[16px] text-[#697386]">
                         Full time
-                      </p>
+                      </p> */}
 
                       {/* Responsibilities */}
-                      <ul className="mt-5 list-disc space-y-1.5 pl-5 text-[15px] leading-[1.55] text-[#5E6879] marker:text-[#303744]">
+                      <ul className="mt-5 list-disc -space-y-2 pl-5 text-[15px] leading-[1.55] text-[#5E6879] marker:text-[#303744]">
                         {role.points.map((point) => (
-                          <li key={point} className="pl-1">
+                          <li key={point} className="">
                             {point}
                           </li>
                         ))}
@@ -199,10 +200,10 @@ export default function Careers() {
                     </div>
 
                     {/* Card footer */}
-                    <div className="mt-auto flex flex-wrap items-end justify-between gap-x-4 gap-y-5 pt-8">
+                    <div className=" flex flex-wrap items-end justify-between gap-x-4 gap-y-5 mt-5">
                       <div className="flex flex-wrap items-center gap-3">
                         {role.isNew && (
-                          <span className="inline-flex min-h-[33px] items-center rounded-[11px] bg-[#E0F5EF] px-4 text-[14px] font-semibold text-[#26785D]">
+                          <span className="inline-flex min-h-[33px] items-center justify-center rounded-[11px] border border-[#D0D5DD] bg-transparent px-4 text-[14px] font-semibold text-[#5E6879]">
                             New to you
                           </span>
                         )}
@@ -211,7 +212,7 @@ export default function Careers() {
                           href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
                             `Application: ${role.title} (${role.location})`,
                           )}`}
-                          className="inline-flex min-h-[33px] items-center justify-center rounded-[11px] bg-[#E0F5EF] px-6 text-[14px] font-semibold text-[#365A50] no-underline transition-colors hover:bg-[#CDEDE3] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#26785D]"
+                          className="inline-flex min-h-[33px] items-center justify-center rounded-[11px] border border-[#D0D5DD] bg-transparent px-4 text-[14px] font-semibold text-[#5E6879] no-underline transition-colors hover:bg-[#F2F4F7] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#303744]"
                         >
                           Apply Now
                         </a>
@@ -256,13 +257,15 @@ export default function Careers() {
               <p className="text-base text-[#697386]">
                 You&apos;ve hidden all the current roles.
               </p>
-              <button
-                type="button"
+              <Button
                 onClick={() => setHiddenRoles([])}
-                className="mt-4 rounded-[11px] bg-[#E0F5EF] px-5 py-2.5 text-sm font-semibold text-[#26785D] transition-colors hover:bg-[#CDEDE3]"
+                variant="secondary"
+                tone="light"
+                size="lg"
+                className="mt-4"
               >
                 Show all positions
-              </button>
+              </Button>
             </div>
           )}
         </div>

@@ -78,7 +78,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </Reveal>
 
             <Reveal delay={200}>
-              <p className="max-w-2xl text-balance text-[1rem] sm:text-[1.125rem]">
+              <p className="text-balance text-[1rem] sm:text-[1.125rem] my-5">
                 {project.summary}
               </p>
             </Reveal>
@@ -129,7 +129,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   The challenge
                 </h3>
                 {project.challengeIntro && (
-                  <p className="">{project.challengeIntro}</p>
+                  <p className="my-5">{project.challengeIntro}</p>
                 )}
                 <ul className="space-y-2 leading-relaxed text-muted">
                   {project.challenges.map((item) => (
@@ -187,7 +187,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <h2 className="max-w-xl tracking-tight text-foreground">
                 How we got there
               </h2>
-              <p className="max-w-3xl">{project.solutionIntro}</p>
+              <p className=" my-5">{project.solutionIntro}</p>
             </Reveal>
 
             <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -198,7 +198,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <h3 className="text-foreground">{step.title}</h3>
-                    <p className="text-[0.875rem]">{step.description}</p>
+                    <p className="text-[0.875rem] my-3">{step.description}</p>
                   </div>
                 </Reveal>
               ))}
@@ -212,7 +212,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <span className="font-mono text-sm text-accent-2">{"// "}</span>
             <span className="text-sm font-medium text-muted">Results</span>
             <h2 className="tracking-tight text-foreground">The numbers</h2>
-            <p className="max-w-3xl">{project.resultsIntro}</p>
+            <p className="my-5">{project.resultsIntro}</p>
           </Reveal>
 
           <div className="mt-12 grid gap-8 border-t border-border pt-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -221,10 +221,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 <div className="text-transparent bg-[linear-gradient(90deg,#b8993f_0%,#d7ba5e_45%,#e6cf85_100%)] bg-clip-text text-3xl font-semibold tracking-tight sm:text-4xl">
                   {item.value}
                 </div>
-                <div className="mt-1.5 text-sm font-medium text-foreground">
+                <div className="mt-5 text-sm font-medium text-foreground">
                   {item.label}
                 </div>
-                <p className="text-[0.875rem]">{item.description}</p>
+                <p className="text-[0.875rem] my-3">{item.description}</p>
               </Reveal>
             ))}
           </div>
@@ -244,7 +244,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   <p key={paragraph}>{paragraph}</p>
                 ))}
               </div>
-              <p className="text-[1.25rem] font-semibold tracking-tight sm:text-[1.5rem]">
+              <p className="mt-5 text-[1.25rem] font-semibold tracking-tight sm:text-[1.5rem]">
                 {project.tagline}
               </p>
             </Reveal>

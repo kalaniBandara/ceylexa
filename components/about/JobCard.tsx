@@ -55,18 +55,16 @@ export default function JobCard({
       <div className="mt-8 flex min-h-[38px] items-end justify-between gap-4 max-sm:mt-7 max-sm:flex-wrap">
         <div className="flex flex-wrap items-center gap-3">
           {isNew && (
-            <span className="inline-flex min-h-[33px] items-center rounded-[11px] bg-[#E0F5EF] px-4 text-[14px] font-semibold text-[#26785D]">
+            <span className="inline-flex min-h-[33px] items-center justify-center rounded-[11px] border border-[#D0D5DD] bg-transparent px-4 text-[14px] font-semibold text-[#5E6879]">
               New to you
             </span>
           )}
-
-          <button
-            type="button"
+          <span
             onClick={onApply}
-            className="inline-flex min-h-[33px] items-center justify-center rounded-[11px] bg-[#E0F5EF] px-6 text-[14px] font-semibold text-[#365A50] transition-colors hover:bg-[#CDEDE3] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#26785D]"
+            className="inline-flex min-h-[33px] items-center justify-center rounded-[11px] border border-[#D0D5DD] bg-transparent px-4 text-[14px] font-semibold text-[#5E6879]"
           >
             Apply Now
-          </button>
+          </span>
         </div>
 
         <div className="flex shrink-0 items-center gap-5 text-[#303744]">

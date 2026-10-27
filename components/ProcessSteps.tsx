@@ -85,7 +85,7 @@ export default function ProcessSteps() {
         <div className="inner-wrappar">
           <div className="flex gap-6 flex-col justify-center items-center max-tablet:gap-[1.2rem] max-md:gap-[1.0499rem] max-mobile:gap-[0.899rem] process">
             <div className="inline-flex gap-4 flex-col flex-1 justify-center items-center max-tablet:gap-[0.8rem] max-md:gap-[0.7rem] max-mobile:gap-[0.6rem] max-mobile:justify-start max-mobile:items-start">
-              <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.5em] process">
+              <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.45em] process">
                 <span className="text-[#d7ba5e] orrenge">{"//"}</span>
                 <span> WORKING PROCESS</span>
               </div>
@@ -113,7 +113,7 @@ export default function ProcessSteps() {
                     Discovery
                   </div>
                   <div className="max-w-64 max-mobile:max-w-none">
-                    <p className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
+                    <p className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal">
                       We dive deep into your brand, audience, and goals to
                       uncover the real opportunity.
                     </p>
@@ -139,7 +139,7 @@ export default function ProcessSteps() {
                     Strategy &amp; Design
                   </div>
                   <div className="max-w-64 max-mobile:max-w-none">
-                    <p className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
+                    <p className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal">
                       We craft a clear direction and design experiences that
                       align creativity with business goals.
                     </p>
@@ -167,7 +167,7 @@ export default function ProcessSteps() {
                     Build &amp; Launch
                   </div>
                   <div className="max-w-64 max-mobile:max-w-none">
-                    <p className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
+                    <p className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal">
                       Our team brings the vision to life with precision, testing
                       every detail.
                     </p>
@@ -193,7 +193,7 @@ export default function ProcessSteps() {
                     Optimize &amp; Scale
                   </div>
                   <div className="max-w-64 max-mobile:max-w-none">
-                    <p className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
+                    <p className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal">
                       We measure performance, refine continuously, and help your
                       brand grow with confidence.
                     </p>

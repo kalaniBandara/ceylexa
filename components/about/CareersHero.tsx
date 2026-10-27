@@ -51,7 +51,7 @@ export default function CareersHero() {
         </h1>
       </div>
 
-      <div className="pt-30 w-full max-tablet:pt-20 max-md:pt-18 max-mobile:pt-16" />
+      {/* <div className="pt-30 w-full max-tablet:pt-20 max-md:pt-18 max-mobile:pt-16" /> */}
     </section>
   );
 }

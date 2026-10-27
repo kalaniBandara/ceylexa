@@ -15,17 +15,7 @@ export const CEYLEXA_SOCIALS = [
   { label: "Snapchat", href: "https://www.snapchat.com/@ceylexa" },
 ];
 
-export const OFFICES = [
-  {
-    name: "New Zealand Head Office",
-    city: "Wellington, New Zealand",
-    phone: "+64 027 256 7029",
-    phoneHref: "tel:+640272567029",
-    email: "hello@ceylexa.nz",
-    website: "www.ceylexa.nz",
-    websiteHref: "https://www.ceylexa.nz",
-  },
-  {
+export const OFFICES = [  {
     name: "Sri Lanka Head Office",
     city: "Pannipitiya, Sri Lanka",
     phone: "+94 77 955 2502",
@@ -34,6 +24,16 @@ export const OFFICES = [
     website: "www.ceylexa.com",
     websiteHref: "https://www.ceylexa.com",
   },
+  {
+    name: "New Zealand Office",
+    city: "Wellington, New Zealand",
+    phone: "+64 027 256 7029",
+    phoneHref: "tel:+640272567029",
+    email: "hello@ceylexa.nz",
+    website: "www.ceylexa.nz",
+    websiteHref: "https://www.ceylexa.nz",
+  },
+
 ];
 
 export const CONTACT_EMAIL = "hello@ceylexa.com";

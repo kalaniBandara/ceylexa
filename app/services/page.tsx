@@ -7,6 +7,7 @@ import ServicesGrid from "@/components/ServicesGrid";
 import { PLATFORM_PARTNERS, SERVICES_INTRO } from "@/lib/services-data";
 import Badge from "@/components/ui/Badge";
 import Reveal from "@/components/ui/Reveal";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Services & Packages — Ceylexa",
@@ -41,17 +42,34 @@ export default function ServicesPage() {
         <ServicePackages />
 
         <section className="relative bg-background py-24">
-          <div className="mx-auto  w-full max-w-7xl px-6 text-left lg:px-8">
+          <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
             <Reveal>
               <h2 className="tracking-tight">{PLATFORM_PARTNERS.heading}</h2>
-              <p className="mx-auto  mt-5">{PLATFORM_PARTNERS.body}</p>
-              <ul className="flex flex-row items-start justify-start mt-10">
+
+              <p className="mt-5 max-w-3xl text-sm leading-7 text-muted-foreground md:text-base">
+                {PLATFORM_PARTNERS.body}
+              </p>
+
+              <ul className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
                 {PLATFORM_PARTNERS.partners.map((partner) => (
                   <li
-                    key={partner}
-                    className="relative overflow-hidden bg-[linear-gradient(180deg,rgba(255,255,255,0.8),rgba(255,255,255,0.6))] border border-border backdrop-blur-[6px] [--mx:50%] [--my:50%] [&>*]:relative [&>*]:z-1 after:absolute after:-inset-0.25 after:z-0 after:content-[''] after:bg-[radial-gradient(480px_circle_at_var(--mx)_var(--my),rgba(215,186,94,0.14),transparent_45%)] after:rounded-[inherit] after:opacity-0 after:[transition:opacity_0.4s_ease] after:pointer-events-none hover:after:opacity-100 bento-card rounded-full px-5 py-2 text-[0.875rem] font-medium"
+                    key={partner.name}
+                    className="flex min-h-32 items-center justify-center rounded-2xl border border-[#dadce0] bg-white p-8 transition-shadow duration-200 hover:shadow-[0_1px_3px_rgba(60,64,67,0.12),0_4px_8px_rgba(60,64,67,0.08)]"
                   >
-                    {partner}
+                    <Image
+                      src={partner.image}
+                      alt={partner.alt}
+                      width={220}
+                      height={90}
+                      sizes="(max-width: 640px) 80vw, (max-width: 1024px) 28vw, 220px"
+                      className={`h-auto max-h-16 w-auto max-w-full object-contain ${
+                        partner.name === "Meta Partner"
+                          ? "scale-[1.7]"
+                          : partner.name === "TikTok Partner"
+                            ? "scale-150"
+                            : ""
+                      }`}
+                    />
                   </li>
                 ))}
               </ul>

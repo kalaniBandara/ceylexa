@@ -29,11 +29,11 @@ export const NEWS: NewsItem[] = [
     slug: "most-popular-social-media-agency-award-2024",
     category: "Award",
     title: "Ceylexa Digital Wins Most Popular Social Media Agency Award 2024",
-    image: "/images/News/popular-awards-2024.webp",
-    gallery: [
-      "/images/News/popular-awards-2024-2.webp",
-      "/images/News/excellence-in-every-achievement.webp",
-    ],
+    image: "/images/News/f703d94a-1a89-434b-9ad2-ba636dc8744c.png",
+    // gallery: [
+    //   "/images/News/popular-awards-2024-2.webp",
+    //   "/images/News/excellence-in-every-achievement.webp",
+    // ],
     paragraphs: [
       "We’re proud to share a special milestone from our journey. Ceylexa was recognized as the Most Popular Social Media Agency at the Popular Awards 2024. This achievement reflects the trust, support, and partnerships we’ve built with our clients and audiences over the years. It’s a proud moment for our entire team and an encouragement to keep creating meaningful, creative, and impactful digital work.",
       "We’re grateful to everyone who has been part of our journey and helped make this recognition possible.",

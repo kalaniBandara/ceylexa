@@ -8,10 +8,10 @@ export default function Blog() {
         <div className="inner-wrappar">
           <div className="flex gap-4 flex-col justify-center items-center max-tablet:gap-[0.8rem] max-md:gap-[0.7rem] max-mobile:gap-[0.6rem]">
             <div className="flex gap-0.5 justify-start items-center">
-              <div className="z-999 font-sans text-[#d7ba5e] text-[0.875rem] leading-[1.5em]">
+              <div className="z-999 font-sans text-[#d7ba5e] text-[0.875rem] leading-[1.45em]">
                 {"//"}
               </div>
-              <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.5em]">
+              <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.45em]">
                 Blog &amp; articles
               </div>
             </div>
@@ -37,7 +37,7 @@ export default function Blog() {
                     className="flex justify-center items-end max-w-full h-[36.625rem] text-black bg-[url(https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg)] bg-position-[50%_0] bg-no-repeat bg-cover rounded-[1rem_1rem_0rem_0rem] origin-[50%_100%] max-tablet:h-[30rem] max-md:h-84"
                   >
                     <div className="flex gap-2 flex-col p-4 w-full bg-white rounded-tl-2xl rounded-tr-2xl max-tablet:gap-[0.4rem] max-tablet:p-[0.8rem] max-md:gap-[0.35rem] max-md:p-[0.7rem] max-mobile:gap-[0.3rem] max-mobile:p-[0.6rem]">
-                      <div className="font-sans text-black text-[0.875rem] leading-[1.5em]">
+                      <div className="font-sans text-black text-[0.875rem] leading-[1.45em]">
                         {post.category} · {post.readingTime}
                       </div>
                       <div className="font-sans text-[1.5rem] leading-[1.2em] font-medium max-tablet:text-[1.4rem] max-md:text-[1.3rem]">

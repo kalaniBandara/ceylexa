@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Google_Sans_Flex } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import PageLoader from "@/components/PageLoader";
+
+// Body copy and descriptions use Google Sans Flex (variable); headings keep the
+// system display stack set in globals.css.
+const googleSansFlex = Google_Sans_Flex({
+  subsets: ["latin"],
+  display: "swap",
+  axes: ["opsz"],
+  variable: "--font-google-sans-flex",
+});
 
 export const metadata: Metadata = {
   title: "Ceylexa",
@@ -15,8 +25,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className="h-full" suppressHydrationWarning>
-      <body id="top" className="min-h-full bg-white font-sans text-[1rem] leading-[1.2em] font-normal text-black antialiased selection:bg-accent selection:text-white">
+    <html lang="en" className={`${googleSansFlex.variable} h-full`} suppressHydrationWarning>
+      <body id="top" className="min-h-full bg-white font-sans text-[1rem] leading-[1.45em] tracking-[0.18px] font-normal text-black antialiased selection:bg-accent selection:text-white">
         {/* Runs before hydration so first-time visitors never see a flash
             of the fully-built page before the loading screen takes over.
             Returning visitors in the same tab (sessionStorage already set)

@@ -103,7 +103,7 @@ export default function CoreValues() {
           <div className=" max-tablet:max-w-none">
             <p
               ref={descriptionRef}
-              className="mb-0 font-sans text-[1rem] font-normal leading-[1.5em] text-black"
+              className="mb-0 font-sans text-[1rem] font-normal leading-[1.45em] text-black"
             >
               We&rsquo;re with you every step of the way, pushing you ever
               closer towards the summit of your success.
@@ -121,7 +121,7 @@ export default function CoreValues() {
               >
                 <h3 className="text-foreground">{value.title}</h3>
 
-                <p className="text-[0.875rem]">{value.description}</p>
+                <p className="text-[0.875rem] mt-5">{value.description}</p>
               </div>
             ))}
           </div>

@@ -31,7 +31,7 @@ export default function TableOfContents({ items }: { items: Item[] }) {
       <div className="mb-4 text-xs font-semibold tracking-wider text-muted uppercase">
         Table of contents
       </div>
-      <ol className="max-h-[70vh] space-y-1 overflow-y-auto border-l border-border pr-2">
+      <ol className="max-h-[70vh] space-y-1 overflow-y-auto pl-0 ">
         {items.map((item) => {
           const isActive = active === item.id;
           return (

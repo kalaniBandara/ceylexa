@@ -4,6 +4,7 @@ import Footer from "@/components/home/Footer";
 import CTASection from "@/components/home/CTASection";
 import Careers from "@/components/about/Careers";
 import CareersHero from "@/components/about/CareersHero";
+import NewsEvents from "@/components/about/NewsEvents";
 
 export const metadata: Metadata = {
   title: "Careers — Ceylexa",
@@ -19,6 +20,7 @@ export default function CareersPage() {
       <main className="main">
         <CareersHero />
         <Careers />
+        <NewsEvents />
         <CTASection />
       </main>
 

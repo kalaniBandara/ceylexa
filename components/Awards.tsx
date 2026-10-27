@@ -7,9 +7,16 @@ import { gsap } from "@/lib/gsap";
 // Add more awards here when confirmed.
 const AWARDS = [
   {
-    org: "Popular Awards",
-    category: "Most Popular Social Media Agency",
-    date: "2024",
+    image: "/images/Awards/2024 Digital Marketing Award Trophy.jpg.jpeg",
+    alt: "Most Popular Digital Marketing Agency 2024",
+  },
+  {
+    image: "/images/Awards/Global Excellence Award Trophy.jpg.jpeg",
+    alt: "Most Popular Athlete Facebook Page 2023",
+  },
+  {
+    image: "/images/Awards/Glossy Crystal Globe Award Trophy.jpg.jpeg",
+    alt: "Most Popular Digital Marketing Agency 2023",
   },
 ];
 
@@ -56,7 +63,7 @@ export default function Awards() {
           {/* Section heading — same layout as Team */}
           <div className="flex flex-col items-start justify-start gap-4 max-tablet:gap-[0.8rem] max-md:gap-[0.7rem] max-mobile:gap-[0.6rem]">
             <h1 ref={headingRef} className="text-left">
-              Awards
+              Awards & Honors
             </h1>
 
             <h3 className="text-left">
@@ -68,47 +75,41 @@ export default function Awards() {
           <div className="pt-6 w-full max-tablet:pt-[1.2rem] max-md:pt-[1.0499rem] max-mobile:pt-[0.899rem]" />
 
           <div className="flex flex-col gap-5">
-            <p className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
+            <p className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal">
               Our journey is built on creativity, innovation, and a commitment
               to delivering meaningful digital experiences. Recognition
               motivates us to keep raising our standards and creating work that
-              makes a difference.
-            </p>
-
-            <p className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
-              We value the trust of our clients and the dedication of our team.
-              Every project is an opportunity to combine creative thinking with
-              strategic execution and deliver results that matter.
+              makes a difference. We value the trust of our clients and the
+              dedication of our team. Every project is an opportunity to combine
+              creative thinking with strategic execution and deliver results
+              that matter.
             </p>
           </div>
 
           {/* Awards list */}
           <div className="pt-15 w-full max-tablet:pt-12 max-md:pt-10.5 max-mobile:pt-9" />
 
-          {/* <div className="flex flex-col gap-4 max-tablet:gap-[0.8rem] max-md:gap-[0.7rem] max-mobile:gap-3">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {AWARDS.map((award) => (
               <div
-                key={`${award.org}-${award.date}`}
-                className="flex justify-between items-center pb-4 border-b border-b-light-transparent-black max-tablet:pb-[0.8rem] max-md:pb-[0.7rem] max-mobile:items-start max-mobile:pb-3"
+                key={award.image}
+                className="group relative overflow-hidden rounded-2xl cursor-pointer"
               >
-                <div className="award-left-item">
-                  <div className="font-sans text-[1.5rem] leading-[1.2em] font-normal max-tablet:text-[1.4rem] max-md:text-[1.3rem]">
-                    {award.org}
-                  </div>
+                <div className="aspect-[9/11] w-full overflow-hidden rounded-2xl bg-[#f5f5f5]">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={award.image}
+                    alt={award.alt}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-150"
+                  />
                 </div>
-
-                <div className="flex gap-10 justify-end items-center max-tablet:gap-8 max-md:gap-7 max-mobile:gap-[0.899rem] max-mobile:items-end max-mobile:flex-col">
-                  <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.5em]">
-                    {award.category}
-                  </div>
-
-                  <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.5em]">
-                    {award.date}
-                  </div>
-                </div>
+                <p className="text-center text-base font-medium text-gray-700 mt-5">
+                  {award.alt}
+                </p>
               </div>
             ))}
-          </div> */}
+          </div>
         </div>
       </div>
 

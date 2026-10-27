@@ -33,14 +33,14 @@ function ServiceCard({ service }: { service: ServiceItem }) {
       onMouseMove={onMouseMove}
       className="relative flex overflow-hidden gap-2 flex-col bg-[linear-gradient(180deg,rgba(255,255,255,0.8),rgba(255,255,255,0.6))] border border-border backdrop-blur-[6px] [--mx:50%] [--my:50%] [&>*]:relative [&>*]:z-1 after:absolute after:-inset-0.25 after:z-0 after:content-[''] after:bg-[radial-gradient(480px_circle_at_var(--mx)_var(--my),rgba(215,186,94,0.14),transparent_45%)] after:rounded-[inherit] after:opacity-0 after:[transition:opacity_0.4s_ease] after:pointer-events-none hover:after:opacity-100 max-tablet:gap-[0.4rem] max-md:gap-[0.35rem] max-mobile:gap-[0.3rem] bento-card group h-full rounded-2xl p-7 transition-colors hover:border-accent/40"
     >
-      <div className="flex items-center justify-between">
+      {/* <div className="flex items-center justify-between">
         <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-accent/15 to-accent-2/15 text-accent-2">
           <Icon size={20} />
         </div>
         <span className="text-xs font-medium tracking-wider text-muted">
           {service.number}
         </span>
-      </div>
+      </div> */}
 
       <h3 className="text-foreground">{service.title}</h3>
       <p className="text-[0.875rem]">{service.summary}</p>

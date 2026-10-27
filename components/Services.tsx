@@ -138,7 +138,7 @@ export default function Services() {
         <div className="inner-wrappar">
           <div className="grid gap-4 grid-rows-[auto] grid-cols-[1fr_0.75fr] auto-cols-[1fr] justify-between items-start max-tablet:gap-6 max-tablet:grid-cols-[repeat(1,1fr)] max-md:gap-5.25 max-md:justify-end max-md:flex-col max-mobile:gap-4.5">
             <div className="gap-4 justify-start items-start max-tablet:gap-[0.8rem] max-md:gap-[0.7rem] max-mobile:flex max-mobile:gap-[0.224rem] max-mobile:flex-col">
-              <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.5em]">
+              <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.45em]">
                 <span className="text-[#d7ba5e] orrenge">{"// "}</span>Solutions
               </div>
               <div className="pt-4 w-full max-tablet:pt-[0.8rem] max-md:pt-[0.7rem] max-mobile:pt-[0.6rem]" />
@@ -185,7 +185,7 @@ export default function Services() {
                         role="button"
                         tabIndex={0}
                       >
-                        <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.5em]">
+                        <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.45em]">
                           {s.number}
                         </div>
                         <div className="text-[2.5rem] leading-[1.2em] font-medium max-tablet:text-[2.25rem] max-md:text-[2rem] max-mobile:text-[1.75rem]">
@@ -236,7 +236,7 @@ export default function Services() {
                               key={pill}
                               className="py-2 px-4 bg-white-smoke rounded-full max-tablet:py-[0.4rem] max-tablet:px-[0.8rem] max-md:py-[0.35rem] max-md:px-[0.7rem] max-mobile:py-[0.3rem] max-mobile:px-[0.6rem]"
                             >
-                              <div className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
+                              <div className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal">
                                 {pill}
                               </div>
                             </div>
@@ -250,10 +250,10 @@ export default function Services() {
                             tabIndex={isActive ? 0 : -1}
                           >
                             <div className="overflow-hidden h-[1.4rem]">
-                              <div className="mb-0 font-sans text-[#d7ba5e] text-[1rem] leading-[1.5em] font-normal">
+                              <div className="mb-0 font-sans text-[#d7ba5e] text-[1rem] leading-[1.45em] font-normal">
                                 Learn More
                               </div>
-                              <div className="mb-0 font-sans text-[#d7ba5e] text-[1rem] leading-[1.5em] font-normal">
+                              <div className="mb-0 font-sans text-[#d7ba5e] text-[1rem] leading-[1.45em] font-normal">
                                 Learn More
                               </div>
                             </div>
@@ -289,7 +289,7 @@ export default function Services() {
                           : "flex gap-6 flex-row justify-start items-start opacity-30 max-tablet:gap-[1.2rem] max-md:gap-[1.0499rem] max-mobile:gap-[0.899rem]"
                       }
                     >
-                      <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.5em]">
+                      <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.45em]">
                         {s.number}
                       </div>
                       <div className="text-[2.5rem] leading-[1.2em] font-medium max-tablet:text-[2.25rem] max-md:text-[2rem] max-mobile:text-[1.75rem]">
@@ -310,7 +310,7 @@ export default function Services() {
                       key={pill}
                       className="py-2 px-4 bg-white-smoke rounded-full max-tablet:py-[0.4rem] max-tablet:px-[0.8rem] max-md:py-[0.35rem] max-md:px-[0.7rem] max-mobile:py-[0.3rem] max-mobile:px-[0.6rem]"
                     >
-                      <div className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
+                      <div className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal">
                         {pill}
                       </div>
                     </div>
@@ -323,10 +323,10 @@ export default function Services() {
                     className="flex gap-2 justify-start items-center max-w-full max-tablet:gap-[0.4rem] max-md:gap-[0.35rem] max-mobile:gap-[0.3rem]"
                   >
                     <div className="overflow-hidden h-[1.4rem]">
-                      <div className="mb-0 font-sans text-[#d7ba5e] text-[1rem] leading-[1.5em] font-normal">
+                      <div className="mb-0 font-sans text-[#d7ba5e] text-[1rem] leading-[1.45em] font-normal">
                         Learn More
                       </div>
-                      <div className="mb-0 font-sans text-[#d7ba5e] text-[1rem] leading-[1.5em] font-normal">
+                      <div className="mb-0 font-sans text-[#d7ba5e] text-[1rem] leading-[1.45em] font-normal">
                         Learn More
                       </div>
                     </div>

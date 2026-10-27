@@ -59,10 +59,10 @@ export default function FAQ() {
               <div className="flex gap-6 flex-col justify-start items-start max-tablet:gap-[1.2rem] max-md:gap-[1.0499rem] max-mobile:gap-[0.899rem]">
                 <div className="flex gap-4 flex-col flex-1 justify-start items-start text-left max-tablet:gap-[0.8rem] max-md:gap-[0.7rem] max-mobile:gap-[0.6rem]">
                   <div className="flex gap-0.5 justify-start items-center">
-                    <div className="z-999 font-sans text-[#d7ba5e] text-[0.875rem] leading-[1.5em]">
+                    <div className="z-999 font-sans text-[#d7ba5e] text-[0.875rem] leading-[1.45em]">
                       {"//"}
                     </div>
-                    <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.5em]">
+                    <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.45em]">
                       FAQS
                     </div>
                   </div>
@@ -74,7 +74,7 @@ export default function FAQ() {
                 </div>
                 <div className="flex gap-8 flex-col justify-start items-start max-tablet:gap-[1.4rem] max-md:gap-[1.224rem] max-mobile:gap-[1.05rem]">
                   <div className="max-w-[26rem]">
-                    <p className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
+                    <p className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal">
                       Answers to the questions brands ask us most. Can&rsquo;t
                       find yours? Get in touch and our team will help.
                     </p>
@@ -109,7 +109,7 @@ export default function FAQ() {
                       >
                         <div className="block">
                           <div className="flex justify-between items-center max-mobile:grid max-mobile:gap-4 max-mobile:items-start max-mobile:grid-rows-[auto] max-mobile:grid-cols-[4fr_0.25fr] max-mobile:auto-cols-[1fr] max-mobile:justify-items-stretch">
-                            <div className="font-sans text-black text-[1.25rem] leading-[1.5em] font-medium max-tablet:text-[1.125rem] max-md:text-[1rem] max-mobile:text-[0.875rem]">
+                            <div className="font-sans text-black text-[1.25rem] leading-[1.45em] font-medium max-tablet:text-[1.125rem] max-md:text-[1rem] max-mobile:text-[0.875rem]">
                               {" "}
                               {item.q}
                             </div>
@@ -124,7 +124,7 @@ export default function FAQ() {
                           >
                             <div className="pt-3 max-tablet:pt-[0.6rem] max-md:pt-[0.5249rem] max-mobile:pt-[0.449rem]" />
                             <div className="max-w-96">
-                              <p className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
+                              <p className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal">
                                 {item.a}
                               </p>
                             </div>

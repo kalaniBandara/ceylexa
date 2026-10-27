@@ -76,10 +76,10 @@ function TestimonialCard({ t }: { t: (typeof TESTIMONIALS)[number] }) {
             {t.name}
           </div>
           <div className="flex gap-0.5 flex-col justify-start items-start max-tablet:gap-[0.1rem] max-md:gap-[0.0875rem] max-mobile:gap-[0.075rem]">
-            <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.5em]">
+            <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.45em]">
               {t.role}
             </div>
-            <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.5em]">
+            <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.45em]">
               {t.location}
             </div>
           </div>
@@ -161,10 +161,10 @@ export default function Testimonials() {
             <div className="flex grid-rows-[auto] grid-cols-[1.5fr_1fr] auto-cols-[1fr] justify-between items-center max-tablet:gap-4 max-tablet:justify-start max-tablet:items-start max-tablet:flex-col max-md:gap-[0.7875rem] max-mobile:gap-[0.674rem]">
               <div className="inline-flex gap-4 flex-col flex-1 justify-center items-start text-left max-tablet:gap-[0.8rem] max-md:gap-[0.7rem] max-mobile:gap-[0.6rem]">
                 <div className="flex gap-0.5 justify-start items-center">
-                  <div className="z-999 font-sans text-[#d7ba5e] text-[0.875rem] leading-[1.5em]">
+                  <div className="z-999 font-sans text-[#d7ba5e] text-[0.875rem] leading-[1.45em]">
                     {"//"}
                   </div>
-                  <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.5em]">
+                  <div className="font-sans text-dim-gray text-[0.875rem] leading-[1.45em]">
                     TESTIMONIALS
                   </div>
                 </div>
@@ -174,7 +174,7 @@ export default function Testimonials() {
               </div>
               <div className="self-center max-tablet:self-auto max-tablet:justify-start max-tablet:items-center max-tablet:mr-auto">
                 <div className="flex justify-center items-center max-w-[25.8rem] max-tablet:max-w-[40rem] max-md:justify-start max-md:max-w-none">
-                  <p className="mb-0 font-sans text-black text-[1rem] leading-[1.5em] font-normal">
+                  <p className="mb-0 font-sans text-black text-[1rem] leading-[1.45em] font-normal">
                     We build the next in commerce on Shopify. From strategy to
                     design, development to retention, we&rsquo;ve got you
                     covered. 9+ years of experience, 200+ stores launched,

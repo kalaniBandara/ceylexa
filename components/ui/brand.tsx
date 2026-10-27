@@ -18,7 +18,7 @@ export function Eyebrow({
 }) {
   return (
     <div
-      className={`flex items-center gap-1 font-sans text-[0.875rem] uppercase leading-[1.5em] ${className}`}
+      className={`flex items-center gap-1 font-sans text-[0.875rem] uppercase leading-[1.45em] ${className}`}
     >
       <span className="text-[#d7ba5e]">{"//"}</span>
       <span className="text-dim-gray">{children}</span>
@@ -68,7 +68,7 @@ export function ArrowButton({
   return (
     <Link
       href={href}
-      className={`group inline-flex items-center gap-2 rounded-full py-2.5 pl-6 pr-2.5 font-semibold leading-[1.5em] transition-transform duration-300 hover:-translate-y-0.5 ${v.wrap} ${className}`}
+      className={`group inline-flex items-center gap-2 rounded-full py-2.5 pl-6 pr-2.5 font-semibold leading-[1.45em] transition-transform duration-300 hover:-translate-y-0.5 ${v.wrap} ${className}`}
     >
       {children}
       <span

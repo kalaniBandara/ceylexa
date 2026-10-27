@@ -11,13 +11,13 @@ export default function CTASection() {
       {/* py-28 */}
 
       <Reveal className="mx-auto  w-full max-w-7xl">
-        <div className="bg-[linear-gradient(180deg,rgba(255,255,255,0.75),rgba(255,255,255,0.55))] relative rounded-3xl px-8 py-28 text-center">
+        <div className="bg-[linear-gradient(180deg,rgba(255,255,255,0.75),rgba(255,255,255,0.55))] relative rounded-3xl px-8 py-20 text-center">
           <h2 className="tracking-tight">
             Your competition is already investing in digital. Are you?
           </h2>
-          <p className="mx-auto max-w-xl">
+          <p className="mx-auto max-w-2xl mt-5">
             Book your consultation today. We&apos;ll show you exactly
-            what&apos;s missing &mdash; and what it would take to close the gap.
+            what&apos;s missing and what it would take to close the gap.
             No obligation. No credit card. No sales pressure. Just strategy.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">

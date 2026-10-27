@@ -1,10 +1,8 @@
 "use client";
 
 import { Check, Sparkles } from "lucide-react";
-import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import Reveal from "@/components/ui/Reveal";
-import { useMercuryGlow } from "@/lib/useMercuryGlow";
 
 type Plan = {
   name: string;
@@ -66,28 +64,25 @@ const PLANS: Plan[] = [
 ];
 
 function PlanCard({ plan }: { plan: Plan }) {
-  const onMouseMove = useMercuryGlow<HTMLDivElement>();
-
   return (
     <div
-      onMouseMove={plan.highlight ? undefined : onMouseMove}
-      className={`bento-card group relative flex h-full flex-col rounded-2xl p-6 transition-all duration-300 sm:p-8 ${
+      className={`group relative flex h-full flex-col rounded-2xl border p-6 transition-all duration-300 sm:p-8 ${
         plan.highlight
-          ? "border border-accent/50 shadow-[0_20px_60px_-20px_rgba(199,157,0,0.45)] md:-translate-y-3"
-          : "hover:border-accent/40"
+          ? "border-accent/60 shadow-[0_20px_60px_-20px_rgba(215,186,94,0.5)] md:-translate-y-3"
+          : "border-border bg-white shadow-[0_10px_40px_-25px_rgba(0,0,0,0.25)] hover:-translate-y-1 hover:border-accent/50"
       }`}
       style={
         plan.highlight
           ? {
               background:
-                "linear-gradient(180deg, rgba(255,253,248,0.95), rgba(255,251,235,0.85))",
+                "linear-gradient(180deg, #fffdf6, #fbf3d6)",
             }
           : undefined
       }
     >
       {plan.highlight && (
-        <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-gradient-to-r from-[#c79d00] to-[#e5d38e] px-4 py-1 text-xs font-medium uppercase tracking-wider text-white shadow-[0_8px_20px_-6px_rgba(199,157,0,0.7)]">
-          <span className="inline-flex items-center gap-1.5">
+        <span className="mb-5 py-2 -mt-3 whitespace-nowrap rounded-full bg-gradient-to-r from-[#c79d00] to-[#e5d38e] px-4 py-1 text-xs font-medium uppercase tracking-wider text-white shadow-[0_8px_20px_-6px_rgba(199,157,0,0.7)]">
+          <span className="flex flex-row items-center justify-center gap-1.5">
             <Sparkles size={12} />
             Most Popular
           </span>
@@ -147,7 +142,7 @@ export default function ServicePackages() {
         <Reveal className="mx-auto  text-left">
           <h2 className="text-3xl font-semibold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
             Social media packages built
-            <span className="text-gradient"> to grow with you.</span>
+             to grow with you.
           </h2>
 
           <p className="mx-auto mt-5  text-base leading-7 text-muted sm:text-lg">
@@ -168,7 +163,6 @@ export default function ServicePackages() {
           ))}
         </div>
 
-        <div className="space-29xl" />
         <p className="mt-10 text-center text-sm text-muted">
           Not sure which package fits?{" "}
           <a

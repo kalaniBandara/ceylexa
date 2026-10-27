@@ -1,12 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
-import Image from "next/image";
 import { gsap } from "@/lib/gsap";
 
 /**
- * Site-wide first-load experience: a branded loading screen (logo mark +
- * progress bar) that plays once per browser session, followed by a GSAP
+ * Site-wide first-load experience: a branded loading screen (logo video) that plays once per browser session, followed by a GSAP
  * entrance animation on the page content once it's ready.
  *
  * How the "once per session, no flash" part works:
@@ -34,8 +32,10 @@ import { gsap } from "@/lib/gsap";
  */
 
 const SESSION_KEY = "ceylexa-loaded";
-const MIN_VISIBLE_MS = 900;
-const MAX_WAIT_MS = 2400;
+// The loader plays public/videos/loader.mp4 (6s). We reveal the page once the
+// page has loaded AND the video has finished, with a hard cap as a safety net.
+const MAX_WAIT_MS = 6800;
+const VIDEO_FALLBACK_MS = 1500; // if the video cannot play at all
 
 function subscribeNever() {
   return () => {};
@@ -60,7 +60,7 @@ export default function PageLoader({ children }: { children: ReactNode }) {
   const phase = useSyncExternalStore(subscribeNever, getPhaseSnapshot, getPhaseServerSnapshot);
   const [loaderDone, setLoaderDone] = useState(false);
   const loaderRef = useRef<HTMLDivElement>(null);
-  const barRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -77,21 +77,18 @@ export default function PageLoader({ children }: { children: ReactNode }) {
     }
 
     // phase === "show"
-    const start = performance.now();
-    let settled = false;
-    let revealTimeout: number | undefined;
+    let pageLoaded = document.readyState === "complete";
+    let videoDone = false;
+    let revealed = false;
+    const timers: number[] = [];
 
     const ctx = gsap.context(() => {
       gsap.set(contentRef.current, { opacity: 0, y: 24 });
-      gsap.set(barRef.current, { scaleX: 0 });
-      gsap.to(barRef.current, {
-        scaleX: 0.92,
-        duration: MAX_WAIT_MS / 1000,
-        ease: "power1.inOut",
-      });
     });
 
     const revealNow = () => {
+      if (revealed) return;
+      revealed = true;
       const tl = gsap.timeline({
         onComplete: () => {
           document.documentElement.classList.remove("pl-loading");
@@ -103,35 +100,44 @@ export default function PageLoader({ children }: { children: ReactNode }) {
           setLoaderDone(true);
         },
       });
-      tl.to(barRef.current, { scaleX: 1, duration: 0.3, ease: "power2.out" })
-        .to(loaderRef.current, { opacity: 0, duration: 0.45, ease: "power2.out" }, "+=0.1")
-        .to(
-          contentRef.current,
-          { opacity: 1, y: 0, duration: 0.85, ease: "power3.out" },
-          "<"
-        );
+      tl.to(loaderRef.current, { opacity: 0, duration: 0.5, ease: "power2.out" }).to(
+        contentRef.current,
+        { opacity: 1, y: 0, duration: 0.85, ease: "power3.out" },
+        "<"
+      );
     };
 
-    const finish = () => {
-      if (settled) return;
-      settled = true;
-      const elapsed = performance.now() - start;
-      const wait = Math.max(0, MIN_VISIBLE_MS - elapsed);
-      revealTimeout = window.setTimeout(revealNow, wait);
+    const check = () => {
+      if (pageLoaded && videoDone) revealNow();
     };
 
-    if (document.readyState === "complete") {
-      finish();
+    const onLoad = () => {
+      pageLoaded = true;
+      check();
+    };
+    const onVideoDone = () => {
+      videoDone = true;
+      check();
+    };
+
+    if (!pageLoaded) window.addEventListener("load", onLoad, { once: true });
+
+    const video = videoRef.current;
+    if (video) {
+      video.addEventListener("ended", onVideoDone);
+      video.addEventListener("error", () => timers.push(window.setTimeout(onVideoDone, VIDEO_FALLBACK_MS)));
+      video.play().catch(() => timers.push(window.setTimeout(onVideoDone, VIDEO_FALLBACK_MS)));
     } else {
-      window.addEventListener("load", finish, { once: true });
+      videoDone = true;
     }
-    const hardCap = window.setTimeout(finish, MAX_WAIT_MS);
+    check();
+    timers.push(window.setTimeout(revealNow, MAX_WAIT_MS));
 
     return () => {
       ctx.revert();
-      window.removeEventListener("load", finish);
-      window.clearTimeout(hardCap);
-      if (revealTimeout) window.clearTimeout(revealTimeout);
+      window.removeEventListener("load", onLoad);
+      video?.removeEventListener("ended", onVideoDone);
+      timers.forEach((t) => window.clearTimeout(t));
     };
   }, [phase]);
 
@@ -142,25 +148,22 @@ export default function PageLoader({ children }: { children: ReactNode }) {
       {showLoaderEl && (
         <div
           ref={loaderRef}
-          className="fixed inset-0 z-[999] flex flex-col items-center justify-center bg-background"
+          className="fixed inset-0 z-[999] flex flex-col items-center justify-center bg-black"
           role="status"
           aria-live="polite"
           aria-label="Loading"
         >
-          <Image
-            src="/images/logo/logo_mark_only.png"
-            alt="Ceylexa"
-            width={2138}
-            height={2140}
-            priority
-            className="h-16 w-16 animate-pulse"
+          <video
+            ref={videoRef}
+            className="h-full w-full max-w-[1280px] object-contain"
+            src="/videos/loader.mp4"
+            poster="/videos/loader-poster.jpg"
+            muted
+            playsInline
+            autoPlay
+            preload="auto"
+            aria-hidden="true"
           />
-          <div className="mt-7 h-px w-40 overflow-hidden rounded-full bg-border">
-            <div
-              ref={barRef}
-              className="h-full w-full origin-left scale-x-0 bg-gradient-to-r from-[#d7ba5e] to-[#e6cf85]"
-            />
-          </div>
         </div>
       )}
       <div

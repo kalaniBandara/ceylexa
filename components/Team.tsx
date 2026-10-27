@@ -43,7 +43,7 @@ const TEAM: Member[] = [
     role: "Senior Digital Marketing Manager",
     highlight: "Thilanka",
     bio: "In the role of Senior Digital Marketing Manager, Thilanka leads digital marketing initiatives, manages campaign performance, identifies growth opportunities, and works closely with creative and marketing teams to deliver measurable results.",
-    image: "/images/Team/Thilanka.png",
+    image: "/images/team/Thilanka.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/iamthilanka/",
     },
@@ -53,7 +53,7 @@ const TEAM: Member[] = [
     role: "Senior Software Engineer",
     highlight: "Kalani",
     bio: "In the role of Senior Software Engineer, Kalani leads software development initiatives, designs and implements scalable technology solutions, ensures code quality and system performance, and contributes to technical decision-making. Working closely with development and cross-functional teams, Kalani helps transform business requirements into reliable, efficient, and innovative software solutions while supporting best practices and continuous improvement.",
-    image: "/images/Team/Kalani.png",
+    image: "/images/team/Kalani.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/kalani-bandara-304162160/",
       website: "https://lanibandara.dev",
@@ -64,7 +64,7 @@ const TEAM: Member[] = [
     role: "Senior Software Engineer",
     highlight: "Lahiru",
     bio: "In the role of Senior Software Engineer, Lahiru oversees the design, development, testing, and optimisation of software solutions. Working closely with technical and cross-functional teams, Lahiru contributes to architecture and technical decisions, resolves complex development challenges, and ensures that applications are secure, scalable, reliable, and aligned with business requirements.",
-    image: "/images/Team/Lahiru.png",
+    image: "/images/team/Lahiru.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/devlahirudinelka/",
       website: "https://devlahirudinelka.me",
@@ -75,7 +75,7 @@ const TEAM: Member[] = [
     role: "Art Director",
     highlight: "Rumesh",
     bio: "In the role of Art Director, MC Rumesh leads the creative vision across visual projects, develops design concepts, and ensures consistency in the overall visual identity of campaigns and brand communications. Working closely with designers, marketing, and creative teams, Rumesh transforms ideas into compelling visual experiences while maintaining high creative standards and ensuring every project communicates its intended message effectively.",
-    image: "/images/Team/Rumesh.png",
+    image: "/images/team/Rumesh.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/chandika-rumesh/",
       portfolio: "https://www.pinterest.com/ruuarts/Chithal",
@@ -86,7 +86,7 @@ const TEAM: Member[] = [
     role: "Senior Graphic Designer",
     highlight: "Chithal",
     bio: "In the role of Senior Graphic Designer, Chithal develops creative visual concepts and produces engaging designs across digital and marketing platforms. Working closely with the Art Director, marketing, and creative teams, Chithal translates ideas and brand requirements into polished designs, maintaining consistency, quality, and strong attention to detail across every design.",
-    image: "/images/Team/Chithal.png",
+    image: "/images/team/Chithal.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/chithal-wellage-10825a2b8/",
       portfolio: "https://www.behance.net/chithalwellage1/appreciated",
@@ -97,7 +97,7 @@ const TEAM: Member[] = [
     role: "Video Editor",
     highlight: "Sumudu",
     bio: "In the role of Video Editor, Sumudu transforms raw footage and creative concepts into engaging, polished video content for digital and marketing platforms. Working closely with the creative, design, and marketing teams, Sumudu manages video editing, pacing, transitions, sound, visual effects, and storytelling to create compelling content that effectively communicates the intended message and strengthens the overall brand presence.",
-    image: "/images/Team/Sumudu.png",
+    image: "/images/team/Sumudu.png",
     socials: {
       facebook: "https://www.facebook.com/sumuduonline",
       portfolio: "https://www.deviantart.com/sumuduonline",

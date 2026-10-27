@@ -13,7 +13,7 @@ export default function CTASection() {
       <Reveal className="mx-auto  w-full max-w-7xl">
         <div className="bg-[linear-gradient(180deg,rgba(255,255,255,0.75),rgba(255,255,255,0.55))] relative rounded-3xl px-8 py-20 text-center">
           <h2 className="tracking-tight">
-            Your competition is already investing in digital. Are you?
+            Your competition is already investing in digital. <br />Are you?
           </h2>
           <p className="mx-auto max-w-2xl mt-5">
             Book your consultation today. We&apos;ll show you exactly
